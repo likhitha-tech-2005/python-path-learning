@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Learn practical Python with 100 guided questions, modern solutions, and clear explanations."
+    />
+    <meta name="theme-color" content="#f6f7f2" />
+    <title>Python Path — Learn by building</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="questions.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Python Path home">
+        <span class="brand-mark">py</span>
+        <span>python<span class="brand-light">path</span></span>
+      </a>
+      <div class="topbar-center">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span>YOUR HANDS-ON PYTHON COURSE</span>
+      </div>
+      <div class="top-progress" aria-live="polite">
+        <span class="progress-label">COURSE PROGRESS</span>
+        <strong id="header-progress">0%</strong>
+        <span class="progress-ring" aria-hidden="true"><span id="progress-ring"></span></span>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="intro">
+        <div class="intro-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span>THE PRACTICAL PYTHON COURSE</div>
+          <h1>Learn Python.<br /><span>Build confidence.</span></h1>
+          <p>
+            A clear path from your first loop to real-world projects. Learn by solving 100
+            carefully explained questions, one step at a time.
+          </p>
+          <div class="intro-meta">
+            <span><span class="meta-icon">01</span> 100 guided questions</span>
+            <span><span class="meta-icon">02</span> Beginner to advanced</span>
+            <span><span class="meta-icon">03</span> Modern Python 3</span>
+          </div>
+        </div>
+        <div class="intro-art" aria-label="Python code illustration">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-spark spark-one">✳</div>
+          <div class="art-spark spark-two">✳</div>
+          <div class="code-card">
+            <div class="code-card-top"><span></span><span></span><span></span><small>your_next_step.py</small></div>
+            <pre><code><i>def</i> <b>keep_learning</b>(you):
+    skills = <em>build</em>(you)
+    <i>return</i> skills
+
+<strong>print</strong>(keep_learning(<u>"every day"</u>))</code></pre>
+            <div class="code-card-footer"><span class="footer-check">✓</span> progress, not perfection</div>
+          </div>
+          <div class="art-sticker"><strong>100</strong><span>small wins<br />ahead</span></div>
+        </div>
+      </section>
+
+      <section class="learning-layout" aria-label="Python course">
+        <aside class="course-panel">
+          <div class="panel-heading">
+            <div>
+              <span class="section-kicker">YOUR ROADMAP</span>
+              <h2>Course index</h2>
+            </div>
+            <span class="course-count" id="course-count">100</span>
+          </div>
+          <label class="search-box" for="question-search">
+            <span aria-hidden="true">⌕</span>
+            <input id="question-search" type="search" placeholder="Find a topic or question..." autocomplete="off" />
+            <kbd>/</kbd>
+          </label>
+          <div class="filter-row">
+            <label class="visually-hidden" for="topic-filter">Filter by topic</label>
+            <select id="topic-filter">
+              <option value="all">All topics</option>
+            </select>
+            <button id="saved-filter" class="saved-filter" type="button" aria-pressed="false">
+              <span aria-hidden="true">☆</span> Saved
+            </button>
+          </div>
+          <div class="roadmap-label"><span>LEARNING PATH</span><span id="visible-count">100 QUESTIONS</span></div>
+          <nav id="question-list" class="question-list" aria-label="Question index"></nav>
+          <div id="empty-list" class="empty-state" hidden>No questions match. Try a different search.</div>
+          <div class="sidebar-note">
+            <span class="note-icon">↗</span>
+            <p><strong>A little every day.</strong><br />Your progress is saved on this device.</p>
+          </div>
+        </aside>
+
+        <section class="lesson-column" aria-live="polite">
+          <div class="lesson-toolbar">
+            <div class="breadcrumb"><span>COURSE</span><span class="crumb-slash">/</span><span id="breadcrumb-topic">FUNDAMENTALS</span></div>
+            <button id="bookmark-button" class="bookmark-button" type="button" aria-pressed="false">
+              <span id="bookmark-icon" aria-hidden="true">☆</span><span id="bookmark-label">Save question</span>
+            </button>
+          </div>
+          <article id="lesson-content"></article>
+        </section>
+      </section>
+
+      <footer class="page-footer">
+        <span>PYTHON PATH <span class="footer-separator">/</span> BUILT FOR THE CURIOUS</span>
+        <span>Practice with Python 3.10+</span>
+      </footer>
+    </main>
+    <noscript>This learning course needs JavaScript enabled to show its questions and explanations.</noscript>
+  </body>
+</html>
